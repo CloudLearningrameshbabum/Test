@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: pod
+metadata: 
+    name:  name
+    labels:
+      name: pod name
+spec:
+    containers:
+      - name: containerName
+        image: Image name
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80
+          
+
+ 
